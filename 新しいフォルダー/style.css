@@ -1,0 +1,285 @@
+body{
+    margin: 0 ;
+} 
+
+.logo{
+    display: flex;
+    /* background-color: cadetblue; */
+} 
+ 
+.main-logo{
+    /* background-size: cover;
+    background-position: center; */ 
+    height: 600px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    border-bottom: solid black 1px;
+}     
+
+ul{
+    display: flex;
+    margin-left: auto;
+    /* background-color: darkkhaki; */
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+li{
+    list-style: none;
+    margin-top: 30px;  
+    margin-left: 70px;
+    /* display: flex; */
+    /* background-color: crimson; */
+    margin-right: 0;
+    display: inline;
+    font-size: 20px;
+}  
+
+
+
+ul > :nth-child(4){
+    margin-right: 30px;
+    /* background-color: blue; */
+} 
+  
+li a{
+    text-decoration: none;
+    color: black;
+    transition-property: border-radius;
+    transition-duration: .3s;
+    transition-property: border;
+    transition-duration: .3s;
+    border: solid white 1px;
+    border-radius: 50%;
+    padding: 5px;
+} 
+
+li a:hover{
+   border: black solid 1px;
+   border-radius: 50%;
+} 
+
+.skils > :nth-child(2){
+width: 200px;
+height: 100px;
+} 
+
+.skils{
+    display: flex;
+} 
+.skill-content{
+    width: 33%;
+    text-align: center;
+  }
+  
+  .skill-text{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    padding-bottom: 100px;
+  }
+  
+  .skill-content h1{
+    font-size: 25px;
+  }
+  
+  .skill-content i{
+    padding: 30px 0 40px 0;
+  }
+
+  .skill-wrapper{
+      border-bottom: black solid 1px;
+      padding-bottom: 50px;
+  }  
+  
+  .contents{
+    display: flex;
+  }
+  
+  .container{
+    width: 75%;
+    margin: 0 auto;
+  }
+  .mainlogo{
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 100;
+    padding: 100px 0 60px 0;
+  } 
+
+  .contents > :nth-child(2){
+      background-color: black;
+      color: white;
+  }   
+
+  /* .contents > :nth-child(2) h1,i,p{
+      color: white;
+  } */
+    
+  .form{
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .about-wrapper{
+      border-bottom: black solid 1px;
+      padding-bottom: 50px;
+      /* background-color: cadetblue; */
+  } 
+ 
+  .about-text{
+    font-size: 18px;
+    padding: 40px 0 0 80px;
+    color: black;
+    background-color:white;
+  }
+  
+  
+  .about-text .fab{
+    padding-right: 10px;
+  
+  }
+  
+  
+  .about-text a{
+    opacity: 0.8;
+  }
+  
+  .about-text a:hover{
+    opacity: 1.0;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  
+  .maintext{
+    font-size: 16px;
+    padding-top: 40px;
+  
+  }
+  
+  .myphoto img{
+    width: 300px;
+    padding: 50px 0 0 60px;
+  }
+  
+  .main-logo{
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 100;
+    padding: 100px 0 60px 0;
+    margin-bottom: 0;
+  }
+
+  .contents2{
+      display: flex;
+  } 
+
+  .about-logo{
+      text-align: center;
+      font-size: 50px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      width: 100%;
+  }   
+
+  .skils-mainlogo{
+      text-align: center;
+      font-size: 50px;
+      background-color: black;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      color: white;
+  }   
+
+  .members{
+      background-color: black;
+      color: white; 
+      width: 100%;
+  }  
+
+  .form h1{
+      font-size: 50px;
+      background-color: black;
+      color: white;
+      margin-top: 150px;
+      margin-bottom: 100px;
+  }  
+
+  .works-wrapper{
+      border-bottom: black solid 1px;
+      padding-bottom: 50px;
+  } 
+  
+  .works-container h1{
+      text-align: center;
+      background-color: black;
+      color: white;
+      font-size: 50px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+  }  
+
+  @media(max-width:800px){    
+
+    .list-mein{
+      display: none;
+    } 
+    
+
+   .contents2{
+     display: block;
+   }
+
+   /* .container{
+     flex-direction: column;
+   }  */
+  }  
+ 
+
+  header .fas{
+    float: right;
+    padding-top: 20px;
+    padding-right: 40px;
+  }
+
+@media(min-width:800px){
+  header{
+    display: none;
+  }
+}
+
+.header-nav a{
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  float: right;
+  font-size: 13px;
+}
+
+.header-nav{
+  margin-right: 0;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+.drawer-btn:checked ~ .header-nav{
+  transform: translateX(5%);
+}
+
+.drawer-btn{
+  position: absolute;
+  right: 40px;
+  top: 790px;
+  transform: scale(2);
+  opacity: 0;
+}
+    
